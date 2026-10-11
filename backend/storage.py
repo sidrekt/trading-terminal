@@ -1,0 +1,4 @@
+instruments = []
+orders = {}
+trades = []
+portfolio = {}

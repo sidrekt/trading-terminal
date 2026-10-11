@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #0f1115;
+  color: #f5f5f5;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header span {
+  color: #888;
+}
+
+section {
+  margin-bottom: 36px;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card,
+.panel,
+.trade {
+  background: #181b21;
+  border: 1px solid #292d35;
+  border-radius: 12px;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card small {
+  color: #777;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.card button,
+.place {
+  width: 100%;
+  padding: 11px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: #f5f5f5;
+  color: #111;
+  font-weight: 600;
+}
+
+.order-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.panel {
+  padding: 24px;
+}
+
+label {
+  display: block;
+  margin: 16px 0 7px;
+  color: #999;
+  font-size: 14px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border-radius: 7px;
+  border: 1px solid #333;
+  background: #101217;
+  color: white;
+}
+
+.toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  background: #101217;
+  color: #aaa;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.toggle .active {
+  background: #eee;
+  color: #111;
+}
+
+.toggle .sell.active {
+  background: #eee;
+}
+
+.place {
+  margin-top: 24px;
+}
+
+.holding,
+.trade {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 8px;
+}
+
+.muted {
+  color: #666;
+}
+
+.buy {
+  color: #7ee787;
+}
+
+.sell {
+  color: #ff7b72;
+}
+
+@media (max-width: 800px) {
+  .cards,
+  .order-section {
+    grid-template-columns: 1fr;
+  }
+}
